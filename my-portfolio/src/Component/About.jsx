@@ -9,8 +9,8 @@ export default function About() {
             <Box id="about" class="about section" w="80%" m="auto" mt="5%" p="30px">
                 <VStack>
                     <Heading textDecoration="underline" color="#EDF5E1" mb="5%">About Me</Heading>
-                    <Text fontWeight="bold" fontSize="3xl">Hello! I'm Neerav Khatri</Text>
-                    <Text fontSize="2xl" w="80%">A full stack developer, with 1200+ hours of coding experience, practice 300+ hours of Data structure and algorithms. High adaptability to learn and collaborate in a rapidly changing environment. Looking forward to working as a web developer with a reputed firm driven by technology. </Text>
+                    <Text id="user-detail-name" fontWeight="bold" fontSize={{ base: "xl", md: "3xl"}}>Hello! I'm Neerav Khatri</Text>
+                    <Text id="user-detail-intro" fontSize={{base: "md", md:"2xl"}} w="80%">A full stack developer, with 1200+ hours of coding experience, practice 300+ hours of Data structure and algorithms. High adaptability to learn and collaborate in a rapidly changing environment. Looking forward to working as a web developer with a reputed firm driven by technology. </Text>
                     <Box pt="20px">
                         <Link href={resume} download textAlign="left">
                             <Button bgColor="#05386B" color="#5CDB95" fontSize="1.5em" onClick={() => window.open("https://drive.google.com/file/d/1T6Q5ce2c2tx2dnG1HU_9dU8zif-by3f6/view")}>Resume</Button>

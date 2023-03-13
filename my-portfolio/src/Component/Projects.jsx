@@ -47,7 +47,7 @@ export default function Project() {
 
     return (
         <div>
-            <Box id="projects" w="80%" m="auto" mt="5%" p="30px">
+            <Box id="projects" w={{base: "95%", md: "80%"}} m="auto" mt="5%" p="30px">
                 <Heading textDecoration="underline" color="#EDF5E1" mb="5%">Projects</Heading>
                 {Project.map((e) => <ProjectCard key={e.id} data={e} />)}
             </Box>

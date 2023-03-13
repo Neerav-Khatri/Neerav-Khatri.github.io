@@ -8,13 +8,13 @@ export default function HomePage () {
     return (
         <div>
             <Box id="home" w="80%" m="auto" mt="5%" color="#05386B" p="30px">
-                <Flex direction={{sm: "column", lg: "row"}} gap="30px">
-                    <Box w={{sm: "100%" , lg: "50%"}} display="flex" justifyContent="center" alignItems="center">
+                <Flex direction={{base: "column", sm: "column", lg: "row"}} gap="30px">
+                    <Box w={{base: "100%", sm: "100%" , lg: "50%"}} display="flex" justifyContent="center" alignItems="center">
                         <Stack direction="column">
                             <Box textAlign="left">
-                                <Heading fontSize="3em">Hello!</Heading>
-                                <Heading fontSize="3em">I'am Neerav</Heading>
-                                <Heading fontSize="3em">Full-Stack Developer</Heading>
+                                <Heading fontSize={{base: "2em", md:"3em"}}>Hello!</Heading>
+                                <Heading fontSize={{base: "2em", md:"3em"}}>I'am Neerav</Heading>
+                                <Heading fontSize={{base: "2em", md:"3em"}}>Full-Stack Developer</Heading>
                             </Box>
                             <Link href={resume} download textAlign="left">
                                 <Button bgColor="#05386B" color="#5CDB95" fontSize="1.5em" w="60%" onClick={() => window.open("https://drive.google.com/file/d/1T6Q5ce2c2tx2dnG1HU_9dU8zif-by3f6/view")}>Resume</Button>
@@ -26,7 +26,7 @@ export default function HomePage () {
                             </HStack>
                         </Stack>
                     </Box>
-                    <Box w={{sm: "100%" , lg: "50%"}} display="flex" justifyContent="center" alignItems="center">
+                    <Box class="home-img" w={{base: "100%", sm: "100%" , lg: "50%"}} display="flex" justifyContent="center" alignItems="center">
                         <Image src={Profile} alt="Neerav Profile Picture" w="80%" borderRadius="100px"/>
                     </Box>
                 </Flex>
