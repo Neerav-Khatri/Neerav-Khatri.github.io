@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.f90242d4.css",
+    "main.css": "/static/css/main.bbc0f306.css",
     "main.js": "/static/js/main.7f78203a.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Profile_Image.png": "/static/media/Profile_Image.de1a515a8a6d0104f423.png",
@@ -10,12 +10,12 @@
     "static/media/fw20_0088-Neerav-Khatri-Resume.pdf": "/static/media/fw20_0088-Neerav-Khatri-Resume.cb9d456e743d69956dbd.pdf",
     "static/media/optimizly.png": "/static/media/optimizly.58d8ee4dc989d82f831d.png",
     "index.html": "/index.html",
-    "main.f90242d4.css.map": "/static/css/main.f90242d4.css.map",
+    "main.bbc0f306.css.map": "/static/css/main.bbc0f306.css.map",
     "main.7f78203a.js.map": "/static/js/main.7f78203a.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f90242d4.css",
+    "static/css/main.bbc0f306.css",
     "static/js/main.7f78203a.js"
   ]
 }
