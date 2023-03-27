@@ -1,7 +1,7 @@
 import { Box, Grid, Heading, VStack } from "@chakra-ui/react";
-import SkillCard from "./SkillCard";
+import SkillsCard from "./SkillsCard";
 
-export default function Skills() {
+export default function Skill(){
     const skills = [
         {
             src : "https://cdn.sanity.io/images/897el8p6/production/31f11147f89dbd855a9b948e2ce643ea2f41c0a9-480x480.png",
@@ -48,6 +48,10 @@ export default function Skills() {
             name : "MongoDB",
         },
         {
+            src : "https://www.pngitem.com/pimgs/m/385-3851477_mongoose-js-logo-png-transparent-png.png",
+            name : "Mongoose",
+        },
+        {
             src : "https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/03/cypress.png?fit=364%2C364&ssl=1",
             name : "Cypress",
         },
@@ -75,11 +79,11 @@ export default function Skills() {
 
     return (
         <div>
-            <Box id="skills" w="80%" m="auto" mt="5%" p="30px">
+            <Box id="skills" w={{base: "100%", sm: "80%", lg: "80%"}} m={"auto"} mt={"5%"} p={"30px"}>
                 <VStack>
-                    <Heading textDecoration="underline" color="#EDF5E1" mb="5%">Skills</Heading>
-                    <Grid templateColumns={{base: "repeat(2,1fr)", sm: "repeat(2,1fr)", md: "repeat(3,1fr)" ,lg:"repeat(4,1fr)"}} gap="30px 20px" justifyContent="center" alignItems="center">
-                        {skills.map((ele) => <SkillCard key={Math.random()} src={ele.src} name={ele.name} />)}
+                    <Heading textDecoration={"underline"} color={"#86C232"} mb={"5%"}>Skills</Heading>
+                    <Grid templateColumns={{base: "repeat(2,1fr)", sm: "repeat(2,1fr)", md: "repeat(3,1fr)", lg: "repeat(4,1fr)"}} gap={"30px 20px"} justifyContent={"center"} alignItems={"center"} >
+                        {skills.map((ele) => <SkillsCard key={Math.random()} src={ele.src} name={ele.name} />)}
                     </Grid>
                 </VStack>
             </Box>

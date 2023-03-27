@@ -1,12 +1,11 @@
 .navbar{
     position: fixed;
     top : 0;
-    left: 5%;
     z-index: 1 ;
-    background-color: #05386B;
-    width: 90%;
+    background-color: #222629;
+    box-shadow: rgba(63, 63, 66, 0.54) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
     margin: auto;
-    border-radius: 50px;
     padding: 15px;
     color: #EDF5E1;
 }
@@ -24,7 +23,7 @@
     color: #EDF5E1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
     #normal{
         display: none;
     }

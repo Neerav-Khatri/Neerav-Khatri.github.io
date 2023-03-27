@@ -1,42 +1,34 @@
 import style from "../Style/Navbar.module.css";
 import React from 'react';
-import { Box, Button, Flex, Heading, HStack, IconButton, Link, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
-import {HamburgerIcon} from "@chakra-ui/icons";
-import resume from "../docs/Neerav_Khatri_Resume.pdf";
-
+import { Box, Button, Flex, Heading, HStack } from "@chakra-ui/react";
+import { Link as Rlink } from "react-scroll";
+import resume from "../docs/fw20_0088-Neerav-Khatri-Resume.pdf";
+import SideDrawer from "./Drawer";
+import Download from "./Download";
 
 const Navbar = () => {
   return (
     <div>
         <Box id="nav-menu" className={style.navbar}>
             <Flex justifyContent="space-between" alignContent="center">
-                <Box ml="20px">
-                    <Heading>Neerav Khatri</Heading>
+                <Box ml="20px" display={"flex"} alignItems={"center"}>
+                    <Heading fontSize={{base: "xl", sm: "2xl", md: "3xl", lg: "4xl"}} fontFamily={"cursive"}>Neerav Khatri</Heading>
                 </Box>
                 <Box id={style.normal}>
                     <HStack gap="30px" fontSize="20px">
-                        <Link href="#home" class="nav-link home">Home</Link>
-                        <Link href="#about" class="nav-link about">About Me</Link>
-                        <Link href="#skills" class="nav-link skills">Skills</Link>
-                        <Link href="#projects" class="nav-link projects">Project</Link>
-                        <Link href="#contact" class="nav-link contact">Contact</Link>
-                        <Link href={resume} download class="nav-link resume">
-                            <Button color="#05386B" bgColor="#5CDB95" onClick={() => window.open("https://drive.google.com/file/d/1T6Q5ce2c2tx2dnG1HU_9dU8zif-by3f6/view")}>Resume</Button>
-                        </Link>
+                        <Rlink activeClass="active" to={"home"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link home">Home</div></Rlink>
+                        <Rlink activeClass="active" to={"about"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link about">About Me</div></Rlink>
+                        <Rlink activeClass="active" to={"skills"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link skills">Skills</div></Rlink>
+                        <Rlink activeClass="active" to={"projects"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link projects">Project</div></Rlink>
+                        <Rlink activeClass="active" to={"github"} spy={true} smooth={true} duration={2000} offset={-100} >Git Stats</Rlink>
+                        <Rlink activeClass="active" to={"contact"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link contact">Contact</div></Rlink>
+                        <a href={resume} download onClick={Download} className="nav-link resume">
+                            <Button id="resume-button-1" color="whiteAlpha.900" bgColor="#86C232" _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>Resume</Button>
+                        </a>
                     </HStack>
                 </Box>
                 <Box id={style.hamburger}>
-                    <Menu>
-                        <MenuButton as={IconButton} aria-label='Options' icon={<HamburgerIcon color="#05386B" />} />
-                            <MenuList bgColor="#05386B" textAlign="center" closeOnSelect>
-                                <MenuItem bgColor="#05386B"><Link href="#home" class="nav-link home">Home</Link></MenuItem>
-                                <MenuItem bgColor="#05386B"><Link href="#about" class="nav-link about">About Me</Link></MenuItem>
-                                <MenuItem bgColor="#05386B"><Link href="#skills" class="nav-link skills">Skills</Link></MenuItem>
-                                <MenuItem bgColor="#05386B"><Link href="#projects" class="nav-link projects">Project</Link></MenuItem>
-                                <MenuItem bgColor="#05386B"><Link href="#contact" class="nav-link contact">Contact</Link></MenuItem>
-                                <MenuItem bgColor="#05386B"><Link href={resume} download class="nav-link resume"><Button color="#05386B" onClick={() => window.open("https://drive.google.com/file/d/1T6Q5ce2c2tx2dnG1HU_9dU8zif-by3f6/view")}>Resume</Button></Link></MenuItem>
-                            </MenuList>
-                    </Menu>
+                    <SideDrawer />
                 </Box>
             </Flex>
         </Box>
