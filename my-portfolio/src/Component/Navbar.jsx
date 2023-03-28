@@ -22,9 +22,11 @@ const Navbar = () => {
                         <Rlink activeClass="active" to={"projects"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link projects">Project</div></Rlink>
                         <Rlink activeClass="active" to={"github"} spy={true} smooth={true} duration={2000} offset={-100} >Git Stats</Rlink>
                         <Rlink activeClass="active" to={"contact"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link contact">Contact</div></Rlink>
-                        <a href={resume} download onClick={Download} className="nav-link resume">
-                            <Button id="resume-button-1" color="whiteAlpha.900" bgColor="#86C232" _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>Resume</Button>
-                        </a>
+                        <Button id="resume-button-1" color="whiteAlpha.900" bgColor="#86C232" _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>
+                            <a href={resume} download="Neerav_Khatri_Resume.pdf" onClick={Download} className="nav-link resume" id="resume-link-1">
+                                Resume
+                            </a>
+                        </Button>
                     </HStack>
                 </Box>
                 <Box id={style.hamburger}>

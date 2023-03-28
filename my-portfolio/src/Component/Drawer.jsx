@@ -66,7 +66,7 @@ function SideDrawer() {
               ))}
               <a
                 href={resume}
-                download
+                download="Neerav_Khatri_Resume.pdf"
                 onClick={Download}
               >
                 <Button className="nav-link resume" id="resume-link-1" mt={5} w='100%' onClick={onClose} bg='#86C232' color='whiteAlpha.900'>
