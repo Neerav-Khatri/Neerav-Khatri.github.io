@@ -16,12 +16,12 @@ const Navbar = () => {
                 </Box>
                 <Box id={style.normal}>
                     <HStack gap="30px" fontSize="20px">
-                        <Rlink activeClass="active" to={"home"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link home">Home</div></Rlink>
-                        <Rlink activeClass="active" to={"about"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link about">About Me</div></Rlink>
-                        <Rlink activeClass="active" to={"skills"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link skills">Skills</div></Rlink>
-                        <Rlink activeClass="active" to={"projects"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link projects">Project</div></Rlink>
-                        <Rlink activeClass="active" to={"github"} spy={true} smooth={true} duration={2000} offset={-100} >Git Stats</Rlink>
-                        <Rlink activeClass="active" to={"contact"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link contact">Contact</div></Rlink>
+                        <Rlink activeClass="active" to={"home"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link home" style={{cursor: "pointer"}}>Home</div></Rlink>
+                        <Rlink activeClass="active" to={"about"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link about" style={{cursor: "pointer"}}>About Me</div></Rlink>
+                        <Rlink activeClass="active" to={"skills"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link skills" style={{cursor: "pointer"}}>Skills</div></Rlink>
+                        <Rlink activeClass="active" to={"projects"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link projects" style={{cursor: "pointer"}}>Project</div></Rlink>
+                        <Rlink activeClass="active" to={"github"} spy={true} smooth={true} duration={2000} offset={-100} style={{cursor: "pointer"}}>Git Stats</Rlink>
+                        <Rlink activeClass="active" to={"contact"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link contact" style={{cursor: "pointer"}}>Contact</div></Rlink>
                         <Button id="resume-button-1" color="whiteAlpha.900" bgColor="#86C232" _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>
                             <a href={resume} download="Neerav_Khatri_Resume.pdf" onClick={Download} className="nav-link resume" id="resume-link-1">
                                 Resume
