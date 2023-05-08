@@ -1,5 +1,5 @@
 import { Box, Button, Heading, HStack, Link, Text, VStack } from "@chakra-ui/react";
-import resume from "../docs/fw20_0088-Neerav-Khatri-Resume.pdf";
+import resume from "../docs/Neerav-Khatri-Resume.pdf";
 import {BsGithub,BsLinkedin} from "react-icons/bs"
 import {GoMail} from "react-icons/go";
 import Download from "./Download";
@@ -15,7 +15,7 @@ export default function About() {
                     <Text fontSize={{base: "1em",sm: "1.2em", md:"1.5em"}} textAlign="justify">If you're looking for a Full-Stack MERN Developer who is passionate about building high-quality applications, feel free to reach out to me. I'm always interested in new opportunities and collaborations.</Text>
                     <Box pt="20px">
                     <Button id="resume-button-2" color="whiteAlpha.900" bgColor="#86C232" fontSize={"1.5em"} _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>
-                        <a href={resume} download="Neerav_Khatri_Resume.pdf" onClick={Download} id="resume-link-2">
+                        <a href={resume} download="Neerav-Khatri-Resume.pdf" onClick={Download} id="resume-link-2">
                             Resume
                         </a>
                     </Button>

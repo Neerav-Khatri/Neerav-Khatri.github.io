@@ -2,7 +2,7 @@ import style from "../Style/Navbar.module.css";
 import React from 'react';
 import { Box, Button, Flex, Heading, HStack } from "@chakra-ui/react";
 import { Link as Rlink } from "react-scroll";
-import resume from "../docs/fw20_0088-Neerav-Khatri-Resume.pdf";
+import resume from "../docs/Neerav-Khatri-Resume.pdf";
 import SideDrawer from "./Drawer";
 import Download from "./Download";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
                         <Rlink activeClass="active" to={"github"} spy={true} smooth={true} duration={2000} offset={-100} style={{cursor: "pointer"}}>Git Stats</Rlink>
                         <Rlink activeClass="active" to={"contact"} spy={true} smooth={true} duration={2000} offset={-100}><div className="nav-link contact" style={{cursor: "pointer"}}>Contact</div></Rlink>
                         <Button id="resume-button-1" color="whiteAlpha.900" bgColor="#86C232" _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>
-                            <a href={resume} download="Neerav_Khatri_Resume.pdf" onClick={Download} className="nav-link resume" id="resume-link-1">
+                            <a href={resume} download="Neerav-Khatri-Resume.pdf" onClick={Download} className="nav-link resume" id="resume-link-1">
                                 Resume
                             </a>
                         </Button>

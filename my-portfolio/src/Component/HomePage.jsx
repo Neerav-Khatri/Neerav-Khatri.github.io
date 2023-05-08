@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, HStack, Image, Link, Stack } from "@chakra-
 import {BsGithub,BsLinkedin} from "react-icons/bs"
 import {GoMail} from "react-icons/go";
 import Profile from "../docs/Profile_Image.png";
-import resume from "../docs/fw20_0088-Neerav-Khatri-Resume.pdf";
+import resume from "../docs/Neerav-Khatri-Resume.pdf";
 import Download from "./Download";
 
 export default function HomePage () {
@@ -17,7 +17,7 @@ export default function HomePage () {
                                 <Heading fontSize={{base: "1.5em",sm: "2em", md:"3em"}}>I am Neerav</Heading>
                                 <Heading fontSize={{base: "1.5em",sm: "2em", md:"3em"}}>Full-Stack Developer</Heading>
                             </Box>
-                            <a href={resume} download="Neerav_Khatri_Resume.pdf" onClick={Download}>
+                            <a href={resume} download="Neerav-Khatri-Resume.pdf" onClick={Download}>
                                 <Button color="whiteAlpha.900" bgColor="#86C232" fontSize="1.5em" w="60%" _hover={{border: "1px solid #86C232", bgColor: "transparent", color: "#86C232"}}>Resume</Button>
                             </a>
                             <HStack gap="20px">

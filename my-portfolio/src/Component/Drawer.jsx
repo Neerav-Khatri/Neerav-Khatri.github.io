@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Link as Rlink } from "react-scroll";
-import resume from "../docs/fw20_0088-Neerav-Khatri-Resume.pdf";
+import resume from "../docs/Neerav-Khatri-Resume.pdf";
 import Download from "./Download";
 
 function SideDrawer() {
@@ -66,7 +66,7 @@ function SideDrawer() {
               ))}
               <a
                 href={resume}
-                download="Neerav_Khatri_Resume.pdf"
+                download="Neerav-Khatri-Resume.pdf"
                 onClick={Download}
               >
                 <Button className="nav-link resume" id="resume-link-1" mt={5} w='100%' onClick={onClose} bg='#86C232' color='whiteAlpha.900'>
