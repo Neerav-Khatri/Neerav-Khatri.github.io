@@ -51,14 +51,14 @@ export default function Skill(){
             src : "https://www.pngitem.com/pimgs/m/385-3851477_mongoose-js-logo-png-transparent-png.png",
             name : "Mongoose",
         },
-        {
-            src : "https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/03/cypress.png?fit=364%2C364&ssl=1",
-            name : "Cypress",
-        },
-        {
-            src : "https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png",
-            name : "Jest",
-        },
+        // {
+        //     src : "https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/03/cypress.png?fit=364%2C364&ssl=1",
+        //     name : "Cypress",
+        // },
+        // {
+        //     src : "https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png",
+        //     name : "Jest",
+        // },
         {
             src : "https://cdn.sanity.io/images/897el8p6/production/a804a741fb26f6c236c73086a87cfc9f64106401-480x480.png",
             name : "Git",

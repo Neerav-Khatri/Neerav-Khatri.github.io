@@ -6,7 +6,7 @@ import {SiNetlify} from "react-icons/si";
 export default function ProjectCard({data}) {
     return (
         <div>
-            <Box border="1px solid #86C232" borderRadius="20px" p="20px" mt="20px">
+            <Box border="1px solid #86C232" borderRadius="20px" p="20px" mt="20px" _hover={{boxShadow: "rgba(134,194,50,255) 0px 3px 10px"}}>
                 <div className="project-card"> 
                     <Flex direction={{base: "column", sm: "column", lg: "row"}} gap="20px">
                         <Box w={{sm: "100%" , lg: "50%"}} display="flex" justifyContent="center" alignItems="center">
@@ -15,10 +15,10 @@ export default function ProjectCard({data}) {
                         <Box w={{sm: "100%" , lg: "50%"}}>
                             <VStack w="100%" m="auto">
                                 <Heading className="project-title" fontWeight="bold" mb="30px" fontSize={{ base: "1.5em",sm: "1.5em", md:"2em"}} >{data.name}</Heading>
-                                <Text className="project-description" fontSize={{base: "1em",sm: "1.2em", md:"1.3em"}} >{data.desc}</Text>
+                                <Text className="project-description" fontSize={{base: "1em",sm: "1.2em", md:"1.3em"}} textAlign={"justify"} px={"20px"}>{data.desc}</Text>
                                 <Box mb="20px">
                                     <Text fontWeight="bold" fontSize={{base: "1.2em",sm: "1.3em", md: "1.3em"}}>Tech Stack:</Text>
-                                    <Text className="project-tech-stack" fontSize={{base: "1em",sm: "1.1em", md: "1.3em"}}>{data.stack}</Text>
+                                    <Text className="project-tech-stack" fontSize={{base: "1em",sm: "1.1em", md: "1.3em"}} px={"20px"}>{data.stack}</Text>
                                 </Box>
                             </VStack>
                             <Box m="auto" mt="20px" display={"flex"} justifyContent={"center"} flexDirection={{base: "column", sm: "row"}} gap={"10px"}>
