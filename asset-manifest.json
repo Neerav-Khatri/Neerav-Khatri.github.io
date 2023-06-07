@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.ebb2853d.css",
-    "main.js": "/static/js/main.4d7053f8.js",
+    "main.js": "/static/js/main.54dd0e6d.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Profile_Image.png": "/static/media/Profile_Image.de1a515a8a6d0104f423.png",
+    "static/media/Crystara.png": "/static/media/Crystara.64493e60935bba98732a.png",
     "static/media/Modesens.png": "/static/media/Modesens.74a7a6a6cc53350dacf7.png",
     "static/media/Diesel.png": "/static/media/Diesel.08933a4113339171ef45.png",
     "static/media/Neerav-Khatri-Resume.pdf": "/static/media/Neerav-Khatri-Resume.c882589ce5ca5b2a15b0.pdf",
@@ -11,11 +12,11 @@
     "static/media/optimizly.png": "/static/media/optimizly.58d8ee4dc989d82f831d.png",
     "index.html": "/index.html",
     "main.ebb2853d.css.map": "/static/css/main.ebb2853d.css.map",
-    "main.4d7053f8.js.map": "/static/js/main.4d7053f8.js.map",
+    "main.54dd0e6d.js.map": "/static/js/main.54dd0e6d.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebb2853d.css",
-    "static/js/main.4d7053f8.js"
+    "static/js/main.54dd0e6d.js"
   ]
 }
