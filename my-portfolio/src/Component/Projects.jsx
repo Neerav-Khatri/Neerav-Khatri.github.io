@@ -4,6 +4,7 @@ import optimizely from "../docs/optimizly.png";
 import diesel from "../docs/Diesel.png";
 import modesens from "../docs/Modesens.png";
 import healthyWay from "../docs/HealthyWay.png";
+import crystara from "../docs/Crystara.png";
 
 export default function Project() {
     const Project = [
@@ -18,6 +19,15 @@ export default function Project() {
         },
         {
             id: 2,
+            src: crystara,
+            name: "Crystara",
+            desc: "Crystara: Your exquisite online jewelry destination. Discover stunning handpicked pieces, certified quality, and personalized assistance. Seamlessly browse, customize, and indulge in fine jewelry with secure transactions and reliable shipping.",
+            stack: "CSS | Next.js | React | Redux | Redux-Thunk | Chakra-UI | JSON server",
+            github: "https://github.com/Neerav-Khatri/Crystara",
+            deploy: "https://crystara-swart.vercel.app/",
+        },
+        {
+            id: 3,
             src: diesel,
             name: "Vogue Fashion",
             desc: "Vogue fashion is a clone of Diesel an online clothing brand. Diesel is an Italian retail clothing company, located in Breganze, Italy. It sells denim and other clothing, footwear, and fashion accessories.",
@@ -26,7 +36,7 @@ export default function Project() {
             deploy: "https://vogue-fashion.netlify.app/",
         },
         {
-            id: 3,
+            id: 4,
             src: optimizely,
             name: "Optimizely-Clone",
             desc: "Optimizely provides digital experience platform software as a service. Optimizely provides A/B testing and multivariate testing tools, website personalization, and feature toggle capabilities, as well as web content management and digital commerce.",
@@ -35,7 +45,7 @@ export default function Project() {
             deploy: "https://optimizely-com-clone-eight.vercel.app/"
         },
         {
-            id: 4,
+            id: 5,
             src: modesens,
             name: "Modesens-Clone",
             desc: "Modesens is a fashion technology company which provides shopping assistance by comparing products through various retail dealears.",
@@ -44,7 +54,7 @@ export default function Project() {
             deploy: "https://shop-modesens.netlify.app/",
         }
         // {
-        //     id: 4,
+        //     id: 6,
         //     src: freshly,
         //     name: "Hunger Saviour",
         //     desc: "Hunger Saviour is a clone of Freshly.com an online meal delivery website. Freshly was a company that provides meal services on daily, weekly and monthly basis.",
